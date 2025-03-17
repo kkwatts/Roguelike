@@ -129,8 +129,9 @@ GameObject:
   m_Component:
   - component: {fileID: 29843642}
   - component: {fileID: 29843641}
+  - component: {fileID: 29843643}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Board Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,6 +165,26 @@ Transform:
   - {fileID: 616836212}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &29843643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29843640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a69017b1da45640cc97735a5161d54ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 8
+  height: 8
+  groundTiles:
+  - {fileID: 11400000, guid: d4baa2ce7b9bc4266a39a20d0bc90f30, type: 2}
+  - {fileID: 11400000, guid: 4734c93baa3a3497ca68c915c8c6d6fb, type: 2}
+  wallTiles:
+  - {fileID: 11400000, guid: 56d8831d7906041f386c8a82d56ccb6f, type: 2}
+  - {fileID: 11400000, guid: 02ffd788f96c34673bf3f2609ed29dd4, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,7 +316,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 4, y: 4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
